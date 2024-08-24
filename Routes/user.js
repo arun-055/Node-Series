@@ -8,7 +8,7 @@ const {handleGetAllUsers,
 
 const router = express.Router();
 
-// router.get("/", handleGetAllUsers); //bcoz thus line and line 47 both hve same path.
+// router.get("/", handleGetAllUsers); //bcoz thus line and line 47 post method both hve same path.
 router.route("/")
 .get(handleGetAllUsers)
 .post(handleCreateUserById)

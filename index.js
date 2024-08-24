@@ -9,11 +9,12 @@ const userRouter = require("./Routes/user");
 const { logReqRes } = require("./middlewares");
 
 //connection
-/* connectMongoDb("mongodb://127.0.0.1:27017/youtube_app1")
+connectMongoDb("mongodb://127.0.0.1:27017/youtube_app1")
   .then(() => console.log("mongoDb connected"))
-  .catch((err) => console.log("Mongo Error", err)); */
+  //.catch((err) => console.log("Mongo Error", err)); 
 //schema
-const User = mongoose.model("user", userSchema);
+//const User = mongoose.model("user", userSchema); 
+
 //middleware-plugin
 app.use(express.urlencoded({ extended: false }));
 
